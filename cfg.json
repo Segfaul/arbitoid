@@ -1,0 +1,107 @@
+{
+
+  "parse": {
+
+    "proxy": {
+      "test": "login:password@ip:port",
+      "proxy1": "...",
+      "proxy2": "..."
+    },
+
+    "headers": {
+      "user_agents": [
+        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538 (KHTML, like Gecko) Chrome/36 Safari/538",
+        "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2599.0 Safari/537.36"
+      ]
+    }
+  },
+
+  "telegram": {
+
+    "bot": {
+      "api_token": "..."
+    }
+
+  },
+
+  "database": {
+    "type": "Postgre",
+    "params": {
+      "username": "...",
+      "password": "...",
+      "database": "...",
+      "ip": "localhost",
+      "port": 5432
+    }
+  },
+
+  "FastAPI": {
+    "__comment": "configuration for FastAPI domain",
+    "params": {
+      "protocol": "http://",
+      "ip": "127.0.0.1",
+      "port": "8000"
+    }
+  },
+
+  "CoinGecko": {
+    "link": "https://api.coingecko.com/api/v3/coins/___?tickers=true&market_data=true&community_data=false&developer_data=false&sparkline=false&order=volume_desc",
+    "network_fees": {
+      "tron": [0, 0],
+      "polygon-pos": [0.002, 0.002],
+      "arbitrum-one": [0.001, 0.001],
+      "solana": [0.001, 0.001],
+      "avalanche": [0.001, 0.001],
+      "ethereum": [0.1, 0.5],
+      "binance-smart-chain": [0.269, 0.573]
+    },
+
+    "market_fees": {
+      "Binance": 0.1,
+      "Bittrex": 0.35,
+      "Bitrue": 0.35,
+      "Bithumb": 0.2,
+      "BitGlobal": 0.17,
+      "Coinbase Exchange": 1.49,
+      "Coinbase_Pro": 0.6,
+      "CoinMetro": 0.1,
+      "Crypto.com Exchange": 0.4,
+      "FTX": 0.07,
+      "FTX US": 0.4,
+      "Gate.io": 0.2,
+      "Gemini": 0.4,
+      "GeminiActive": 0.35,
+      "Huobi": 0.2,
+      "Huobi Global": 0.2,
+      "Kraken": 0.26,
+      "KuCoin": 0.1,
+      "MEXC": 0.2,
+      "OKX": 0.1,
+      "Kraken Pro": 0.26,
+      "Pionex": 0.05,
+      "Celsius": 0.0001,
+      "Nexo": 1,
+      "Upbit": 0.25,
+      "BlockFi": 1,
+      "Vauld": 0.1,
+      "Voyager": 3,
+      "CashApp": 1.75,
+      "PayPal": 2.3,
+      "Strike": 0,
+      "Venmo": 2.30,
+      "eToro": 0.75,
+      "M1Finance": 0.0001,
+      "Robinhood": 5,
+      "SoFi": 1,
+      "LBank": 0.1,
+      "ZB.COM": 0.14,
+      "WeBull": 1,
+      "Pancake": 0.3,
+      "Bitexen": 0.2,
+      "IDEX": 0.25,
+      "Bibox": 0.2
+    }
+
+  }
+
+}
